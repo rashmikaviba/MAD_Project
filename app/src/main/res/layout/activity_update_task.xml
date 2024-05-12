@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UpdateTaskActivity">
+
+    <TextView
+        android:id="@+id/edit_taskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Update Note."
+        android:textColor="@color/purple"
+        android:textSize="24sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateSaveButton"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/edit_taskHeading"
+        android:layout_marginEnd="6dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/updateTittle"
+        android:hint="Enter Your Tittle"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/edit_taskHeading"
+        android:background="@drawable/purple_border"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updateDes"
+        android:hint="Enter Your Notes!"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:layout_below="@+id/updateTittle"
+        android:background="@drawable/purple_border"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+
+
+</RelativeLayout>
